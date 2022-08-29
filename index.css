@@ -1,0 +1,67 @@
+
+header{
+	height: 150px;
+	background: linear-gradient(90deg, rgba(9,9,9,1) 0%, rgba(0,0,0,1) 35%, rgba(62,59,59,0.989233193277311) 100%);	
+	display: flex;
+}
+
+header h1{
+	transition: 100ms all;
+	margin: auto auto;
+	color: green;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 38px;
+}
+.header-logo{
+	position: absolute;
+	width: 150px;
+	height: auto;
+}
+/* Main */
+main{
+	background: linear-gradient(90deg, rgba(9,9,9,1) 0%, rgba(0,0,0,1) 35%, rgba(62,59,59,0.989233193277311) 100%);	
+}
+form{
+	padding-bottom:  30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.textoAencriptar{
+	resize: none;
+	margin-left: 15%;
+	border: none;
+	border-radius: 15px;
+	padding: 20px;
+	background:none;
+	font-size: 18px;
+	color: chartreuse;
+}
+
+.textoEncriptado{
+	resize: none; 
+	margin: auto auto;					;
+	border: none;
+	border-radius: 15px;
+	padding: 12px;
+	background-color: rgba(62,59,59,0.989233193277311);
+	font-size: 18px;
+	color: chartreuse;
+}
+
+.botones{
+	display: block;
+	margin: 0 auto;
+}
+
+/* Footer */
+footer{
+	text-align: center;
+	background: rgb(150, 150, 150);
+	padding: 0px;
+}
+
+.copyright{
+	font-size: 14px;
+	padding-bottom: 10px;
+}
