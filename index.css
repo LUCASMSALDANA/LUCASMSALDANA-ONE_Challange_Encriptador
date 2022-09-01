@@ -31,17 +31,16 @@ header p{
 }
 
 main{
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px
 }
 
 .encriptador{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px ;
 }
 
 #Encriptador{
@@ -49,7 +48,7 @@ main{
 	color: chartreuse;
     border: none;
     border-radius: 15px;
-    padding: 5px ;
+    padding: 5px 8px;
     resize:none;
     box-shadow: 1px 1px 5px ;
 }
@@ -66,6 +65,8 @@ button{
     border: 1px solid white;
     border-radius: 10px;
     font-weight: bold;
+    height: 25px;
+    font-family: 'JetBrains Mono', monospace;
 }
 .botones{
     display: flex;
@@ -80,26 +81,62 @@ button{
     border: none;
     color: white;
 }
+.encriptar:active{
+    color: chartreuse;
+}
+.encriptar:hover{
+    transition: 400ms;
+    box-shadow: 0px 0px 4px chartreuse;
+}
+.encriptar:active{
+    color: chartreuse;
+}
 .desencriptar{
     background: none;
     color: white;
+}
+.desencriptar:active{
+    font-size: 13px;
+}
+.desencriptar:hover{
+    transition: 300ms;
+    box-shadow: 0px 0px 4px white;
 }
 .encriptado{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px auto;
 }
 
 #TxtEncriptado{
     background-color: rgb(104, 104, 104);
     border: none;
     border-radius: 15px;
-    padding: 5px ;
+    padding: 5px 8px;
     resize:none;
     box-shadow: 1px 1px 5px ;
+    font-weight: bold;
 }
 #TxtEncriptado:focus{
     outline: none;
+}
+
+.copiar{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 200px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
+
+.copiar:active{
+    transition: 200ms;
+    border: none;
+    box-shadow: 0px 0px 10px white;
 }
 /*********/
 /*Footer*/
@@ -123,4 +160,25 @@ footer p{
 .copyright{
 	font-size: 14px;
 	padding-bottom: 10px;
+}
+
+@media (min-width: 768px){
+    header .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:initial
+    }
+    .logo-header{
+        height: 150px;
+        width: auto;
+        margin: 0px 20px;
+        text-align: left;
+    }
+    header .logo{
+        position:absolute; 
+        width: 100%;
+        margin:auto auto; 
+        text-align:center;
+    }
 }
