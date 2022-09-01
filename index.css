@@ -1,0 +1,94 @@
+/* Configuraciones para toda la pagina*/
+* { box-sizing: border-box;}
+
+body { 
+    margin: 0; 
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background: linear-gradient(90deg, rgba(9,9,9,1) 0%, rgba(0,0,0,1) 35%, rgba(62,59,59,0.9) 100%);
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-header{
+    height: 150px;
+    width: auto;
+    margin: 0px auto;
+}
+header p{
+    color: green;
+    margin: 4px auto;
+    font-size: 1.4em;
+}
+
+main{
+    background: linear-gradient(90deg, rgba(9,9,9,1) 0%, rgba(0,0,0,1) 35%, rgba(62,59,59,0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px
+}
+
+.encriptador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Encriptador{
+    background:none;
+	color: chartreuse;
+    border: none;
+    resize:none;
+}
+button{
+    margin: 5px 0;
+    font-size: 12px;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*********/
+/*Footer*/
+/*******/
+
+footer{
+	text-align: center;
+	background: rgb(150, 150, 150);
+	padding: 0px;
+}
+
+footer .logo-footer{
+    height: 150px;
+    margin: -5px;
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+}
+
+.copyright{
+	font-size: 14px;
+	padding-bottom: 10px;
+}
