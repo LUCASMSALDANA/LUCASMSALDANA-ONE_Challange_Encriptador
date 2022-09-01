@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Encriptador</title>
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-                <img src="img/Header-LMS-logo.svg " class="header-logo">  
-                <h1>Encriptador</h1>
-        </header>
-        <main>
-            <form>
-                    <textarea class="textoAencriptar" cols="80" rows="30" placeholder="Mensaje a Encriptar" autofocus></textarea>
-                    <textarea class="textoEncriptado"  cols="40" rows="30" disabled ></textarea>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/Header-LMS-logo.svg" alt="Logo Lucas Saldaña" class="logo-header">
+            <p class="logo">Encriptador</p>
+        </div>
+    </header>
+    <main>
+        <section class="encriptador">
+            <div class="container">
+                <textarea id="Encriptador" cols="30" rows="10" placeholder="Escriba su mensaje a encriptar"></textarea>
+            </div>
+            <div class="botones">
+                <button class="encriptar">Encriptar</button>
+                <button class="desencriptar">Desecnriptar</button>
+            </div>
+        </section>
+        <section class="encriptado">
+            <div class="container">
+                <div class="imgalura"></div>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            <button class="copiar">Copiar</button>
+        </section>
+    </main>
 
-            </form>
-            <div class = "botones">
-                <input type="button" value="Encriptar" id="btnEncripta">       
-                <input type="button" value="Desencriptar" id="btnDesencripta">      
-            </div>   
-        </main>
-
-        <footer>
-            <img src="img/logo-lms.png">
-            <p class="copyright"><em>&copy Copyright Lucas Saldaña</em></p>
-        </footer>
-    </body>
-    </body>
+    <footer>
+        <div class="container">
+            <a href="https://github.com/LUCASMSALDANA"> <img class="logo-footer" src="img/logo-lms.png" alt="Lucas Saldaña" ></a>
+            <p>&copy Copyright Lucas Saldaña</p>
+        </div>
+    </footer>
+</body>
 </html>
-
-<!----------------------->
-<!-- Codigo JavaScript -->
-
-<!----------------------->
-<script type="text/javascript">
-    var title = document.querySelector("title");
-
-</script>
