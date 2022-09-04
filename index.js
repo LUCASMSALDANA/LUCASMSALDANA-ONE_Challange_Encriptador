@@ -17,8 +17,6 @@ const tituloDesencriptado = titulo.textContent;
 const tituloEncriptado = encriptarTexto(titulo.textContent);
 
 
-
-
 //Boton de Encriptar Texto
 function btnEncriptarTexto(){
     let texto=txtAencriptar.value.toLowerCase().trim();
