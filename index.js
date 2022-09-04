@@ -66,20 +66,20 @@ function btnDesencriptarTexto(){
 
 
 function desencriptarTexto(texto){
-    if(texto.includes("enter")){
-        texto=texto.replaceAll("enter","e");
+    if(texto.includes("ufat")){
+        texto=texto.replaceAll("ufat","u");
     }
-    if(texto.includes("imes")){
-        texto=texto.replaceAll("iimes","i");
+    if(texto.includes("ober")){
+        texto=texto.replaceAll("ober","o");
     }
     if(texto.includes("ai")){
         texto=texto.replaceAll("ai","a");
     }
-    if(texto.includes("ober")){
-        texto=texto.replaceAll("oober","o");
+    if(texto.includes("imes")){
+        texto=texto.replaceAll("imes","i");
     }
-    if(texto.includes("ufat")){
-        texto=texto.replaceAll("ufat","u");
+    if(texto.includes("enter")){
+        texto=texto.replaceAll("enter","e");
     }
     return texto;
 }
@@ -88,6 +88,6 @@ function copiarTxtEncriptado(){
     if (txtEncriptado.value!=""){
         txtAencriptar.value=txtEncriptado.value;
         txtEncriptado.value="";
-        txtEncriptado.style.backgroundImage="url(img/Muñeco.png)";
+        txtEncriptado.style.backgroundImage="linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(img/Muñeco.png)";
     }
 }
