@@ -60,7 +60,7 @@ function btnDesencriptarTexto(){
         titulo.textContent=tituloDesencriptado;
         txtAencriptar.value="";
     }else{
-        alert("Debe ingresar un mensaje a Encriptar")
+        alert("Debe ingresar un mensaje a Desencriptar")
     }
 }
 
