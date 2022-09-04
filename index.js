@@ -16,6 +16,9 @@ btnCopiar.onclick = copiarTxtEncriptado;
 const tituloDesencriptado = titulo.textContent;
 const tituloEncriptado = encriptarTexto(titulo.textContent);
 
+
+
+
 //Boton de Encriptar Texto
 function btnEncriptarTexto(){
     let texto=txtAencriptar.value.toLowerCase().trim();
@@ -88,6 +91,10 @@ function copiarTxtEncriptado(){
     if (txtEncriptado.value!=""){
         txtAencriptar.value=txtEncriptado.value;
         txtEncriptado.value="";
-        txtEncriptado.style.backgroundImage="linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(img/Muñeco.png)";
+        if(window.innerWidth>=768){
+            txtEncriptado.style.backgroundImage="linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(img/Muñeco.png)";
+        }else{
+         txtEncriptado.style.backgroundColor="background-color: rgb(104, 104, 104);";  
+        }
     }
 }
