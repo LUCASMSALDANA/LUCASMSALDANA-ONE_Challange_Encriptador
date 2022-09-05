@@ -3,7 +3,6 @@
 
 body { 
     margin: 0; 
-
     background: linear-gradient(180deg, rgba(9,9,9,1) 0%, rgba(0,0,0,1) 15%, rgba(62,59,59,0.9) 100%);
     font-family: 'JetBrains Mono', monospace;
 }
